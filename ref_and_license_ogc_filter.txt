@@ -10,17 +10,17 @@ https://www.ogc.org/standards/filter
 Publication Date: 2014-08-18  
 Approval Date: 2014-08-18  
 Submission Date: 2014-06-30  
-External identifier of this OGC® document: http://www.opengis.net/doc/IS/fes/2.0.3  
-URL for this OGC® document: http://docs.opengeospatial.org/is/09-026r2/09-026r2.html  
-Reference number of this OGC® Project Document: OGC 09-026r2  
+External identifier of this OGC(r) document: http://www.opengis.net/doc/IS/fes/2.0.3  
+URL for this OGC(r) document: http://docs.opengeospatial.org/is/09-026r2/09-026r2.html  
+Reference number of this OGC(r) Project Document: OGC 09-026r2  
 Version: 2.0.3  
-Category: OGC® Implementation Standard  
+Category: OGC(r) Implementation Standard  
 Editor: Panagiotis (Peter) A. Vretanos  
 
-Copyright © 2014 Open Geospatial Consortium  
+Copyright (c) 2014 Open Geospatial Consortium  
 To obtain additional rights of use, visit http://www.opengeospatial.org/legal/.   
 
-Document type: OGC® Implementation Standard  
+Document type: OGC(r) Implementation Standard  
 Document subtype: Encoding  
 Document stage: Approved version 2.0.3  
 Document language: English  

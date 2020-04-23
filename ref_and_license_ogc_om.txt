@@ -8,16 +8,16 @@ Observations and Measurements - XML Implementation
 https://www.ogc.org/standards/om
 
 Date: 2011-03-22  
-Reference number of this OGC® project document: OGC 10-025r1  
-OGC name of this OGC® project document: http://www.opengis.net/doc/IS/OMXML/2.0  
+Reference number of this OGC(r) project document: OGC 10-025r1  
+OGC name of this OGC(r) project document: http://www.opengis.net/doc/IS/OMXML/2.0  
 Version: 2.0  
-Category: OGC® Implementation  
+Category: OGC(r) Implementation  
 Editor: Simon Cox
 
-Copyright © 2011 Open Geospatial Consortium.  
+Copyright (c) 2011 Open Geospatial Consortium.  
 To obtain additional rights of use, visit http://www.opengeospatial.org/legal/.
 
-Document type: OpenGIS® Implementation standard  
+Document type: OpenGIS(r) Implementation standard  
 Document subtype: Encoding  
 Document stage: Approved  
 Document language: English

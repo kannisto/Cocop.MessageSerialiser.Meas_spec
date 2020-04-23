@@ -1,23 +1,23 @@
-OGC® Sensor Planning Service Implementation Standard
+OGC(r) Sensor Planning Service Implementation Standard
 ====================================================
 
 Reference
 ---------
 
-OGC® Sensor Planning Service Implementation Standard  
+OGC(r) Sensor Planning Service Implementation Standard  
 https://www.ogc.org/standards/sps
 
 Date: 2011-03-28  
 Reference number of this document: OGC 09-000  
-OGC name of this OGC® project document: http://www.opengis.net/doc/IS/SPS/2.0  
+OGC name of this OGC(r) project document: http://www.opengis.net/doc/IS/SPS/2.0  
 Version: 2.0  
-Category: OpenGIS® Implementation Standard  
+Category: OpenGIS(r) Implementation Standard  
 Editor(s): Ingo Simonis, Johannes Echterhoff
 
-Copyright © 2011 Open Geospatial Consortium  
+Copyright (c) 2011 Open Geospatial Consortium  
 To obtain additional rights of use, visit http://www.opengeospatial.org/legal/.
 
-Document type: OpenGIS® Standard  
+Document type: OpenGIS(r) Standard  
 Document subtype: Interface  
 Document stage: Approved  
 Document language: English

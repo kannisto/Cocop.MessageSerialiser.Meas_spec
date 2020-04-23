@@ -1,23 +1,23 @@
-OpenGIS® SWE Service Model Implementation Standard
+OpenGIS(r) SWE Service Model Implementation Standard
 ==================================================
 
 Reference
 ---------
 
-OpenGIS® SWE Service Model Implementation Standard  
+OpenGIS(r) SWE Service Model Implementation Standard  
 https://www.ogc.org/standards/swes
 
 Date: 2011-03-21  
 Reference number of this document: OGC 09-001  
-OGC name of this OGC® project document: http://www.opengis.net/doc/IS/SWES/2.0  
+OGC name of this OGC(r) project document: http://www.opengis.net/doc/IS/SWES/2.0  
 Version: 2.0  
-Category: OpenGIS® Implementation Standard  
+Category: OpenGIS(r) Implementation Standard  
 Editor: Johannes Echterhoff
 
-Copyright © 2011 Open Geospatial Consortium.  
+Copyright (c) 2011 Open Geospatial Consortium.  
 To obtain additional rights of use, visit http://www.opengeospatial.org/legal/.
 
-Document type: OpenGIS® Standard  
+Document type: OpenGIS(r) Standard  
 Document subtype: NA  
 Document stage: Approved  
 Document language: English

@@ -1,22 +1,22 @@
-OpenGIS® Geography Markup Language (GML) Encoding Standard
+OpenGIS(r) Geography Markup Language (GML) Encoding Standard
 ==========================================================
 
 Reference
 ---------
 
-OpenGIS® Geography Markup Language (GML) Encoding Standard  
+OpenGIS(r) Geography Markup Language (GML) Encoding Standard  
 https://www.ogc.org/standards/gml
 
 Date: 2007-08-27  
-Reference number of this OGC® document: OGC 07-036  
+Reference number of this OGC(r) document: OGC 07-036  
 Version: 3.2.1  
-Category: OpenGIS® Standard  
+Category: OpenGIS(r) Standard  
 Editor: Clemens Portele
 
-Copyright © 2007 Open Geospatial Consortium, Inc. All Rights Reserved.  
+Copyright (c) 2007 Open Geospatial Consortium, Inc. All Rights Reserved.  
 To obtain additional rights of use, visit http://www.opengeospatial.org/legal/. 
 
-Document type: OpenGIS® Standard  
+Document type: OpenGIS(r) Standard  
 Document subtype: Not Applicable  
 Document stage: Final  
 Document language: English

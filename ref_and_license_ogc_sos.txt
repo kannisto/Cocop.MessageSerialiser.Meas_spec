@@ -1,21 +1,21 @@
-OGC® Sensor Observation Service Interface Standard
+OGC(r) Sensor Observation Service Interface Standard
 ==================================================
 
 Reference
 ---------
 
-OGC® Sensor Observation Service Interface Standard  
+OGC(r) Sensor Observation Service Interface Standard  
 https://www.ogc.org/standards/sos
 
 Approval Date: 2012-04-16  
 Publication Date: 2012-04-20  
 Reference number of this document: OGC 12-006  
-OGC name of this OGC® project document: http://www.opengis.net/doc/IS/SOS/2.0  
+OGC name of this OGC(r) project document: http://www.opengis.net/doc/IS/SOS/2.0  
 Version: 2.0  
-Category: OpenGIS® Implementation Standards  
+Category: OpenGIS(r) Implementation Standards  
 Editors: Arne Bröring (52°North), Christoph Stasch (IfGI), Johannes Echterhoff (iGSI)
 
-Copyright © 2012 Open Geospatial Consortium.  
+Copyright (c) 2012 Open Geospatial Consortium.  
 To obtain additional rights of use, visit http://www.opengeospatial.org/legal/.
 
 Document type: OGC Implementation Standard  

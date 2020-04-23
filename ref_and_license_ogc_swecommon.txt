@@ -1,23 +1,23 @@
-OGC® SWE Common Data Model Encoding Standard
+OGC(r) SWE Common Data Model Encoding Standard
 ============================================
 
 Reference
 ---------
 
-OGC® SWE Common Data Model Encoding Standard  
+OGC(r) SWE Common Data Model Encoding Standard  
 https://www.ogc.org/standards/swecommon
 
 Date: 2011-01-04  
-Reference number of this OGC® document: OGC 08-094r1  
-OGC name of this OGC® project document: http://www.opengis.net/doc/IS/SWE/2.0  
+Reference number of this OGC(r) document: OGC 08-094r1  
+OGC name of this OGC(r) project document: http://www.opengis.net/doc/IS/SWE/2.0  
 Version: 2.0.0  
-Category: OGC® Encoding Standard  
+Category: OGC(r) Encoding Standard  
 Editor: Alexandre Robin  
 
-Copyright © 2011 Open Geospatial Consortium  
+Copyright (c) 2011 Open Geospatial Consortium  
 To obtain additional rights of use, visit http://www.opengeospatial.org/legal/.
 
-Document type: OGC® Publicly Available Standard  
+Document type: OGC(r) Publicly Available Standard  
 Document subtype: Encoding  
 Document stage: Approved  
 Document language: English

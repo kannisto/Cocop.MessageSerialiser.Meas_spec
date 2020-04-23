@@ -25,7 +25,7 @@ redistributed or derivative work.
 2. Any pre-existing intellectual property disclaimers, notices, or terms and
 conditions. If none exist, a short notice of the following form (hypertext is
 preferred, text is permitted) should be used within the body of any
-redistributed or derivative code: "Copyright © [$date-of-document] Open
+redistributed or derivative code: "Copyright (c) [$date-of-document] Open
 Geospatial Consortium, Inc. All Rights Reserved.
 http://www.opengeospatial.org/ogc/legal (Hypertext is preferred, but a textual
 representation is permitted.)
