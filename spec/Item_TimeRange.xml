@@ -16,13 +16,13 @@
     Last modified: 4/2020
 
     This file has been derived from standards and XML schemata provided by the
-    Open Geospatial Consortium (OGC®). Please make sure to read and understand
+    Open Geospatial Consortium (OGC(r)). Please make sure to read and understand
     the following legal conditions:
     (1) Copyright Notice and Disclaimers at https://www.ogc.org/ogc/legal
-    (2) OGC® Document Notice; the most recent version is at
+    (2) OGC(r) Document Notice; the most recent version is at
         https://www.ogc.org/ogc/document and another enclosed in file
         "ogc_document_notice.txt"
-    (3) OGC® Software Notice; the most recent version is at
+    (3) OGC(r) Software Notice; the most recent version is at
         https://www.ogc.org/ogc/software and another enclosed in file
         "ogc_software_notice.txt"
     (4) The license of each related standard referred to in this file.
@@ -32,7 +32,7 @@
     
     In this file, the code has been derived from the following standards:
 
-    - OpenGIS® Geography Markup Language (GML) Encoding Standard
+    - OpenGIS(r) Geography Markup Language (GML) Encoding Standard
       (OGC 07-036; please see the file "ref_and_license_ogc_gml.txt")
 
     - Observations and Measurements - XML Implementation
