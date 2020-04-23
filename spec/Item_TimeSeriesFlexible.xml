@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<om:OM_Observation 
+  gml:id="my-obs" 
+  xmlns:gml="http://www.opengis.net/gml/3.2"
+  xmlns:om="http://www.opengis.net/om/2.0" 
+  xmlns:tsml="http://www.opengis.net/tsml/1.0" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xmlns:xlink="http://www.w3.org/1999/xlink" 
+  xmlns:gmlcov="http://www.opengis.net/gmlcov/1.0">
+	
+  <!--
+    Please make sure to read and understand README.md and LICENSE.txt.
+
+    This file was prepared in the research project COCOP (Coordinating
+    Optimisation of Complex Industrial Processes).
+    https://cocop-spire.eu/
+    Author: Petri Kannisto, Tampere University, Finland
+    Last modified: 4/2020
+
+    This file has been derived from standards and XML schemata provided by the
+    Open Geospatial Consortium (OGC®). Please make sure to read and understand
+    the following legal conditions:
+    (1) Copyright Notice and Disclaimers at https://www.ogc.org/ogc/legal
+    (2) OGC® Document Notice; the most recent version is at
+        https://www.ogc.org/ogc/document and another enclosed in file
+        "ogc_document_notice.txt"
+    (3) OGC® Software Notice; the most recent version is at
+        https://www.ogc.org/ogc/software and another enclosed in file
+        "ogc_software_notice.txt"
+    (4) The license of each related standard referred to in this file.
+    
+    Please note: this file has *not* received any official compliance check
+    with OGC standards.
+    
+    In this file, the code has been derived from the following standards:
+
+    - OpenGIS® Geography Markup Language (GML) Encoding Standard
+      (OGC 07-036; please see the file "ref_and_license_ogc_gml.txt")
+
+    - Observations and Measurements - XML Implementation
+      (OGC 10-025r1; please see the file "ref_and_license_ogc_om.txt")
+
+    - TimeseriesML 1.0 – XML Encoding of the Timeseries Profile of Observations and Measurements
+      (OGC 15-042r3; please see the file "ref_and_license_ogc_tsml.txt")
+  -->
+  
+  <!--
+    In this file: time series data with a flexible sampling interval.
+    The file has no particular focus on observation metadata.
+  -->
+  
+  <om:type xlink:href="cocop/observationType/TimeSeriesFlexible"/>
+  
+  <om:phenomenonTime>
+		<gml:TimeInstant gml:id="time-101">
+			<gml:timePosition>2020-02-21T12:44:00Z</gml:timePosition>
+		</gml:TimeInstant>
+	</om:phenomenonTime>
+	<om:resultTime>
+		<gml:TimeInstant gml:id="time-102">
+			<gml:timePosition>2020-02-21T12:44:00Z</gml:timePosition>
+		</gml:TimeInstant>
+  </om:resultTime>
+  
+  <!-- The observation XML schema require these metadata fields. -->
+  <om:procedure xlink:type="simple" xlink:title=""/>
+  <om:observedProperty xlink:type="simple" xlink:title=""/>
+  <om:featureOfInterest xlink:type="simple" xlink:title=""/>
+  
+  <om:result xsi:type="tsml:TimeseriesDomainRangeType" gml:id="domain-range-1">
+  
+    <gml:description>Example</gml:description>
+    <gml:domainSet>
+      <tsml:TimePositionList gml:id="temporal-1">
+        <tsml:timePositionList>2020-01-01T00:00:00Z 2020-01-02T00:00:00Z 2020-01-03T00:00:00Z 2020-01-04T00:00:00Z</tsml:timePositionList>
+      </tsml:TimePositionList>
+    </gml:domainSet>
+    <gml:rangeSet>
+      <gml:QuantityList uom="m"> 2.03 2.06 2.42 2.23 </gml:QuantityList>
+    </gml:rangeSet>
+    <gmlcov:rangeType>
+      <!-- The rangeType element is required but the enclosed data record is optional -->
+    </gmlcov:rangeType>
+    
+    <!--
+      The OGC example "timeseries-domain-range-example.xml" uses the gmlcov:metadata
+      field instead of this. However, this approach is better typed (no extension 
+      elements used) and has one less of XML element layers.
+    -->
+    <tsml:metadata>
+      <tsml:TimeseriesMetadataExtension>
+        <tsml:annotation>
+            <tsml:AnnotationCoverage gml:id="quality-1">
+              <!-- The schema requires a domainSet element (gml:AbstractCoverageType). -->
+              <!-- This domain set refers to the time position list. -->
+              <gml:domainSet xlink:href="#temporal-1"/>
+              <gml:rangeSet>
+                <gml:CategoryList codeSpace="http://cocop"> good bad/equipmentfailure good bad</gml:CategoryList>
+              </gml:rangeSet>
+              <gmlcov:rangeType/>
+            </tsml:AnnotationCoverage>
+          </tsml:annotation>
+      </tsml:TimeseriesMetadataExtension>
+    </tsml:metadata>
+    
+  </om:result>
+  
+</om:OM_Observation>

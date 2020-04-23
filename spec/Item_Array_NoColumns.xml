@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<om:OM_Observation
+	gml:id="my-obs"
+	xmlns:gml="http://www.opengis.net/gml/3.2"
+  xmlns:om="http://www.opengis.net/om/2.0"
+	xmlns:swe="http://www.opengis.net/swe/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:co="http://www.cocop-spire.eu/om-custom/1.2">
+  
+  <!--
+    Please make sure to read and understand README.md and LICENSE.txt.
+
+    This file was prepared in the research project COCOP (Coordinating
+    Optimisation of Complex Industrial Processes).
+    https://cocop-spire.eu/
+    Author: Petri Kannisto, Tampere University, Finland
+    Last modified: 4/2020
+
+    This file has been derived from standards and XML schemata provided by the
+    Open Geospatial Consortium (OGC®). Please make sure to read and understand
+    the following legal conditions:
+    (1) Copyright Notice and Disclaimers at https://www.ogc.org/ogc/legal
+    (2) OGC® Document Notice; the most recent version is at
+        https://www.ogc.org/ogc/document and another enclosed in file
+        "ogc_document_notice.txt"
+    (3) OGC® Software Notice; the most recent version is at
+        https://www.ogc.org/ogc/software and another enclosed in file
+        "ogc_software_notice.txt"
+    (4) The license of each related standard referred to in this file.
+    
+    Please note: this file has *not* received any official compliance check
+    with OGC standards.
+    
+    In this file, the code has been derived from the following standards:
+
+    - OpenGIS® Geography Markup Language (GML) Encoding Standard
+      (OGC 07-036; please see the file "ref_and_license_ogc_gml.txt")
+
+    - Observations and Measurements - XML Implementation
+      (OGC 10-025r1; please see the file "ref_and_license_ogc_om.txt")
+
+    - OGC® SWE Common Data Model Encoding Standard
+      (OGC 08-094r1; please see the file "ref_and_license_ogc_swecommon.txt")
+  -->
+  
+  <!--
+    In this file: array as the payload, no columns specified.
+    The file has no particular focus on observation metadata.
+  -->
+  
+	<om:type xlink:href="http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_ComplexObservation"/>
+	<om:phenomenonTime>
+		<gml:TimeInstant gml:id="phenotime">
+			<gml:timePosition>2020-02-21T12:44:00Z</gml:timePosition>
+		</gml:TimeInstant>
+	</om:phenomenonTime>
+	<om:resultTime>
+    <gml:TimeInstant gml:id="resulttime">
+			<gml:timePosition>2020-02-21T12:44:00Z</gml:timePosition>
+		</gml:TimeInstant>
+  </om:resultTime>
+  
+  <!-- The observation XML schema require these metadata fields. -->
+  <om:procedure xlink:type="simple" xlink:title=""/>
+  <om:observedProperty xlink:type="simple" xlink:title=""/>
+  <om:featureOfInterest xlink:type="simple" xlink:title=""/>
+  
+	<om:result xsi:type="swe:DataArrayType">
+    <swe:elementCount></swe:elementCount>
+    <swe:elementType name="columns"> <!-- XML schema requires this. This must be a valid NCName. -->
+      <swe:DataRecord>
+      </swe:DataRecord>
+    </swe:elementType>
+    <swe:encoding>
+      <swe:XmlEncoding />
+    </swe:encoding>
+    <swe:values>
+      <co:Array> <!-- This array is a COCOP extension to standards -->
+        <co:Row></co:Row>
+        <co:Row></co:Row>
+      </co:Array>
+    </swe:values>
+  </om:result>
+</om:OM_Observation>

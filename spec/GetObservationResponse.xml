@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sos:GetObservationResponse 
+  xmlns:gml="http://www.opengis.net/gml/3.2" 
+  xmlns:om="http://www.opengis.net/om/2.0" 
+  xmlns:sos="http://www.opengis.net/sos/2.0" 
+  xmlns:swe="http://www.opengis.net/swe/2.0" 
+  xmlns:swes="http://www.opengis.net/swes/2.0" 
+  xmlns:xlink="http://www.w3.org/1999/xlink" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  
+  <!--
+    Please make sure to read and understand README.md and LICENSE.txt.
+
+    This file was prepared in the research project COCOP (Coordinating
+    Optimisation of Complex Industrial Processes).
+    https://cocop-spire.eu/
+    Author: Petri Kannisto, Tampere University, Finland
+    Last modified: 4/2020
+
+    This file has been derived from standards and XML schemata provided by the
+    Open Geospatial Consortium (OGC®). Please make sure to read and understand
+    the following legal conditions:
+    (1) Copyright Notice and Disclaimers at https://www.ogc.org/ogc/legal
+    (2) OGC® Document Notice; the most recent version is at
+        https://www.ogc.org/ogc/document and another enclosed in file
+        "ogc_document_notice.txt"
+    (3) OGC® Software Notice; the most recent version is at
+        https://www.ogc.org/ogc/software and another enclosed in file
+        "ogc_software_notice.txt"
+    (4) The license of each related standard referred to in this file.
+    
+    Please note: this file has *not* received any official compliance check
+    with OGC standards.
+    
+    In this file, the code has been derived from the following standards:
+
+    - OpenGIS® Geography Markup Language (GML) Encoding Standard
+      (OGC 07-036; please see the file "ref_and_license_ogc_gml.txt")
+
+    - Observations and Measurements - XML Implementation
+      (OGC 10-025r1; please see the file "ref_and_license_ogc_om.txt")
+
+    - OGC® Sensor Observation Service Interface Standard
+      (OGC 12-006; please see the file "ref_and_license_ogc_sos.txt")
+
+    - OGC® SWE Common Data Model Encoding Standard
+      (OGC 08-094r1; please see the file "ref_and_license_ogc_swecommon.txt")
+
+    - OpenGIS® SWE Service Model Implementation Standard
+      (OGC 09-001; please see the file "ref_and_license_ogc_swes.txt")
+
+    - TimeseriesML 1.0 – XML Encoding of the Timeseries Profile of Observations and Measurements
+      (OGC 15-042r3; please see the file "ref_and_license_ogc_tsml.txt")
+  -->
+  
+  <!--
+    In this document: two observations as the payload of the response +
+    a data record as an extension
+  -->
+  
+  <swes:extension xsi:type="swe:DataRecordPropertyType">
+    <swe:DataRecord>
+      <swe:identifier>cocop/requestresult</swe:identifier>
+      <swe:field name="result">
+        <swe:Category>
+          <swe:value>Ok</swe:value>
+        </swe:Category>
+      </swe:field>
+      <swe:field name="message">
+        <swe:Text>
+          <swe:value>It's OK</swe:value>
+        </swe:Text>
+      </swe:field>
+    </swe:DataRecord>
+	</swes:extension>
+  
+  <sos:observationData>
+  
+    <om:OM_Observation gml:id="obs1">
+      
+      <om:type xlink:href="http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement"/>
+      <om:phenomenonTime>
+        <gml:TimeInstant gml:id="phenomenonTimeInstant1">
+          <gml:timePosition>2018-02-05T12:10:15.00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </om:phenomenonTime>
+      <om:resultTime>
+        <gml:TimeInstant gml:id="resultTimeInstant1">
+          <gml:timePosition>2018-02-05T12:31:56.00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </om:resultTime>
+      <om:procedure xlink:type="simple" xlink:title="weighing" />
+      <om:observedProperty xlink:type="simple" xlink:title="mass" />
+      <om:featureOfInterest xlink:type="simple" xlink:title="crane/loadmass" />
+      <om:result xsi:type="gml:MeasureType" uom="t">20.3</om:result>
+      
+    </om:OM_Observation>
+  
+  </sos:observationData>
+  <sos:observationData>
+  
+    <om:OM_Observation gml:id="obs2">
+      
+      <om:type xlink:href="http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement"/>
+      <om:phenomenonTime>
+        <gml:TimeInstant gml:id="phenomenonTimeInstant2">
+          <gml:timePosition>2018-02-05T12:10:13.00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </om:phenomenonTime>
+      <om:resultTime>
+        <gml:TimeInstant gml:id="resultTimeInstant2">
+          <gml:timePosition>2018-02-05T12:31:53.00Z</gml:timePosition>
+        </gml:TimeInstant>
+      </om:resultTime>
+      <om:procedure xlink:type="simple" xlink:title="weighing" />
+      <om:observedProperty xlink:type="simple" xlink:title="mass" />
+      <om:featureOfInterest xlink:type="simple" xlink:title="crane/loadmass" />
+      <om:result xsi:type="gml:MeasureType" uom="t">20.5</om:result>
+      
+    </om:OM_Observation>
+  
+  </sos:observationData>
+  
+</sos:GetObservationResponse>

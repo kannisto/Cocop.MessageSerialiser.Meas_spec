@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<om:OM_Observation
+	gml:id="my-obs"
+	xmlns:gml="http://www.opengis.net/gml/3.2"
+  xmlns:om="http://www.opengis.net/om/2.0"
+	xmlns:swe="http://www.opengis.net/swe/2.0"
+	xmlns:tsml="http://www.opengis.net/tsml/1.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:cocop="http://www.cocop-spire.eu/om-custom/1.1"
+  xmlns:gmlcov="http://www.opengis.net/gmlcov/1.0"
+  xmlns:co="http://www.cocop-spire.eu/om-custom/1.2">
+	
+  <!--
+    Please make sure to read and understand README.md and LICENSE.txt.
+
+    This file was prepared in the research project COCOP (Coordinating
+    Optimisation of Complex Industrial Processes).
+    https://cocop-spire.eu/
+    Author: Petri Kannisto, Tampere University, Finland
+    Last modified: 4/2020
+
+    This file has been derived from standards and XML schemata provided by the
+    Open Geospatial Consortium (OGC®). Please make sure to read and understand
+    the following legal conditions:
+    (1) Copyright Notice and Disclaimers at https://www.ogc.org/ogc/legal
+    (2) OGC® Document Notice; the most recent version is at
+        https://www.ogc.org/ogc/document and another enclosed in file
+        "ogc_document_notice.txt"
+    (3) OGC® Software Notice; the most recent version is at
+        https://www.ogc.org/ogc/software and another enclosed in file
+        "ogc_software_notice.txt"
+    (4) The license of each related standard referred to in this file.
+    
+    Please note: this file has *not* received any official compliance check
+    with OGC standards.
+    
+    In this file, the code has been derived from the following standards:
+
+    - OpenGIS® Geography Markup Language (GML) Encoding Standard
+      (OGC 07-036; please see the file "ref_and_license_ogc_gml.txt")
+
+    - Observations and Measurements - XML Implementation
+      (OGC 10-025r1; please see the file "ref_and_license_ogc_om.txt")
+
+    - OGC® SWE Common Data Model Encoding Standard
+      (OGC 08-094r1; please see the file "ref_and_license_ogc_swecommon.txt")
+
+    - TimeseriesML 1.0 – XML Encoding of the Timeseries Profile of Observations and Measurements
+      (OGC 15-042r3; please see the file "ref_and_license_ogc_tsml.txt")
+  -->
+  
+  <!--
+    In this file: a data record with all the support data types included, including a nested data record.
+    The file has no particular focus on observation metadata.
+  -->
+  
+	<om:type xlink:href="http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_ComplexObservation"/>
+	<om:phenomenonTime>
+		<gml:TimeInstant gml:id="time-101">
+			<gml:timePosition>2020-02-21T12:44:00Z</gml:timePosition>
+		</gml:TimeInstant>
+	</om:phenomenonTime>
+	<om:resultTime>
+		<gml:TimeInstant gml:id="time-102">
+			<gml:timePosition>2020-02-21T12:44:00Z</gml:timePosition>
+		</gml:TimeInstant>
+  </om:resultTime>
+  
+  <!-- The observation XML schema require these metadata fields. -->
+  <om:procedure xlink:type="simple" xlink:title=""/>
+  <om:observedProperty xlink:type="simple" xlink:title=""/>
+  <om:featureOfInterest xlink:type="simple" xlink:title=""/>
+  
+	<om:result
+		xsi:type="swe:DataRecordPropertyType">
+		<swe:DataRecord>
+      <swe:identifier>my-identifier</swe:identifier>
+      <swe:field name="SomeMeasurement1">
+        <swe:Quantity>
+          <swe:uom code="kg"/>
+          <swe:value>5.6</swe:value>
+        </swe:Quantity>
+      </swe:field>
+      <swe:field name="SomeMeasurement2">
+        <swe:Quantity>
+          <swe:quality xlink:type="simple" xlink:title="bad" />
+          <swe:uom code="kg"/>
+          <swe:value>5.6</swe:value>
+        </swe:Quantity>
+      </swe:field>
+      <swe:field name="SomeBoolean1">
+        <swe:Boolean>
+          <swe:quality xlink:type="simple" xlink:title="good" />
+          <swe:value>false</swe:value>
+        </swe:Boolean>
+      </swe:field>
+      <swe:field name="SomeBoolean2">
+        <swe:Boolean>
+          <swe:quality xlink:type="simple" xlink:title="bad" />
+          <swe:value>true</swe:value>
+        </swe:Boolean>
+      </swe:field>
+      <swe:field name="SomeCount1">
+        <swe:Count>
+          <swe:quality xlink:type="simple" xlink:title="good" />
+          <swe:value>442</swe:value>
+        </swe:Count>
+      </swe:field>
+      <swe:field name="SomeCount2">
+        <swe:Count>
+          <swe:quality xlink:type="simple" xlink:title="bad" />
+          <swe:value>442</swe:value>
+        </swe:Count>
+      </swe:field>
+      <swe:field name="SomeTimeInstant1">
+        <swe:Time>
+          <swe:uom/>
+          <swe:value>2018-03-02T10:17:00Z</swe:value>
+        </swe:Time>
+      </swe:field>
+      <swe:field name="SomeTimeInstant2">
+        <swe:Time>
+          <swe:quality xlink:type="simple" xlink:title="bad" />
+          <swe:uom/>
+          <swe:value>2018-03-02T10:17:00Z</swe:value>
+        </swe:Time>
+      </swe:field>
+      <swe:field name="SomeTimePeriod1">
+        <swe:TimeRange>
+          <swe:uom/>
+          <swe:value>2018-03-09T15:17:00Z 2018-03-09T15:18:09Z</swe:value>
+        </swe:TimeRange>
+      </swe:field>
+      <swe:field name="SomeTimePeriod2">
+        <swe:TimeRange>
+          <swe:quality xlink:type="simple" xlink:title="bad" />
+          <swe:uom/>
+          <swe:value>2018-03-09T15:17:00Z 2018-03-09T15:18:09Z</swe:value>
+        </swe:TimeRange>
+      </swe:field>
+      <swe:field name="SomeCategory1">
+        <swe:Category>
+          <swe:value>process_step_a</swe:value>
+        </swe:Category>
+      </swe:field>
+      <swe:field name="SomeCategory2">
+        <swe:Category>
+          <swe:quality xlink:type="simple" xlink:title="bad" />
+          <swe:value>process_step_a</swe:value>
+        </swe:Category>
+      </swe:field>
+      <swe:field name="SomeText1">
+        <swe:Text>
+          <swe:value>Some text</swe:value>
+        </swe:Text>
+      </swe:field>
+      <swe:field name="SomeText2">
+        <swe:Text>
+          <swe:quality xlink:type="simple" xlink:title="bad" />
+          <swe:value>Another text</swe:value>
+        </swe:Text>
+      </swe:field>
+      <swe:field name="SomeMeasurementRange1">
+        <swe:QuantityRange>
+          <swe:uom code="cm"/>
+          <swe:value>  2.6   3.4   </swe:value>
+        </swe:QuantityRange>
+      </swe:field>
+      <swe:field name="SomeMeasurementRange2">
+        <swe:QuantityRange>
+          <swe:quality xlink:type="simple" xlink:title="bad" />
+          <swe:uom code="km"/>
+          <swe:value> 4.3 4.4</swe:value>
+        </swe:QuantityRange>
+      </swe:field>
+      <swe:field name="SomeCategoryRange1">
+        <swe:CategoryRange>
+          <swe:value>step_c step_d</swe:value>
+        </swe:CategoryRange>
+      </swe:field>
+      <swe:field name="SomeCategoryRange2">
+        <swe:CategoryRange>
+          <swe:quality xlink:type="simple" xlink:title="bad" />
+          <swe:value>K N</swe:value>
+        </swe:CategoryRange>
+      </swe:field>
+      <swe:field name="SomeCountRange1">
+        <swe:CountRange>
+          <swe:value> 45 89  </swe:value>
+        </swe:CountRange>
+      </swe:field>
+      <swe:field name="SomeCountRange2">
+        <swe:CountRange>
+          <swe:quality xlink:type="simple" xlink:title="bad" />
+          <swe:value>-2 5</swe:value>
+        </swe:CountRange>
+      </swe:field>
+      <swe:field name="NestedDataRecord">
+        <swe:DataRecord>
+          <swe:field name="NestedMeasurement">
+            <swe:Quantity>
+              <swe:uom code="m"/>
+              <swe:value>22.44</swe:value>
+            </swe:Quantity>
+          </swe:field>
+        </swe:DataRecord>
+      </swe:field>
+      <swe:field name="TimeSeriesConstant">
+        <cocop:AbstractGmlAsSweDataComponent>
+          <tsml:TimeseriesDomainRange gml:id="timeser-domainrange-1">
+            <gml:description>Example</gml:description>
+            <gml:domainSet></gml:domainSet>
+            <gml:rangeSet>
+              <gml:QuantityList uom="Cel"> 19.2 22.9 24.5 18.3 </gml:QuantityList>
+            </gml:rangeSet>
+            <gmlcov:rangeType></gmlcov:rangeType>
+            <tsml:metadata>
+              <tsml:TimeseriesMetadataExtension>
+                <tsml:timeseriesMetadata>
+                  <tsml:TimeseriesMetadata>
+                    <tsml:baseTime>2019-11-01T00:00:00Z</tsml:baseTime>
+                    <tsml:spacing>PT1H</tsml:spacing>
+                  </tsml:TimeseriesMetadata>
+                </tsml:timeseriesMetadata>
+                <tsml:annotation>
+                  <tsml:AnnotationCoverage gml:id="quality-1">
+                    <gml:domainSet />
+                    <gml:rangeSet>
+                      <gml:CategoryList codeSpace="http://cocop"> bad/equipmentfailure good good bad</gml:CategoryList>
+                    </gml:rangeSet>
+                    <gmlcov:rangeType/>
+                  </tsml:AnnotationCoverage>
+                </tsml:annotation>
+              </tsml:TimeseriesMetadataExtension>
+            </tsml:metadata>
+          </tsml:TimeseriesDomainRange>
+        </cocop:AbstractGmlAsSweDataComponent>
+      </swe:field>
+      <swe:field name="TimeSeriesFlexible">
+        <cocop:AbstractGmlAsSweDataComponent>
+          <tsml:TimeseriesDomainRange gml:id="timeser-domainrange-2">
+            <gml:description>Example</gml:description>
+            <gml:domainSet>
+              <tsml:TimePositionList gml:id="timeposlist">
+                <tsml:timePositionList>2020-01-01T00:00:00Z 2020-01-02T00:00:00Z 2020-01-03T00:00:00Z </tsml:timePositionList>
+              </tsml:TimePositionList>
+            </gml:domainSet>
+            <gml:rangeSet>
+              <gml:QuantityList uom="m"> 2.03 2.06 2.42 </gml:QuantityList>
+            </gml:rangeSet>
+            <gmlcov:rangeType></gmlcov:rangeType>
+            <tsml:metadata>
+              <tsml:TimeseriesMetadataExtension>
+                <tsml:annotation>
+                    <tsml:AnnotationCoverage gml:id="quality-2">
+                      <gml:domainSet xlink:href="#timeposlist"/>
+                      <gml:rangeSet>
+                        <gml:CategoryList codeSpace="http://cocop"> good bad/equipmentfailure good</gml:CategoryList>
+                      </gml:rangeSet>
+                      <gmlcov:rangeType/>
+                    </tsml:AnnotationCoverage>
+                  </tsml:annotation>
+              </tsml:TimeseriesMetadataExtension>
+            </tsml:metadata>
+          </tsml:TimeseriesDomainRange>
+        </cocop:AbstractGmlAsSweDataComponent>
+      </swe:field>
+      <swe:field name="SomeArray">
+        <swe:DataArray>
+          <!-- The schema requires the "elementCount" element but nothing inside it -->
+          <swe:elementCount></swe:elementCount>
+          <swe:elementType name="columns"> <!-- Name attribute is mandatory and must be a valid NCName -->
+            <swe:DataRecord>
+              <swe:field name="MeasurementCol">
+                <swe:Quantity>
+                  <swe:uom code="cm"/>
+                </swe:Quantity>
+              </swe:field>
+              <swe:field name="TextCol">
+                <swe:Text />
+              </swe:field>
+            </swe:DataRecord>
+          </swe:elementType>
+          <swe:values>
+            <co:Array>
+              <co:Row>
+                <co:I>-0.053</co:I><co:I>Hello 1</co:I>
+              </co:Row>
+              <co:Row>
+                <co:I>-0.054</co:I><co:I>Hello 2</co:I>
+              </co:Row>
+              <co:Row>
+                <co:I>-0.057</co:I><co:I>Hello 3</co:I>
+              </co:Row>
+            </co:Array>
+          </swe:values>
+        </swe:DataArray>
+      </swe:field>
+    </swe:DataRecord>
+	</om:result>
+</om:OM_Observation>

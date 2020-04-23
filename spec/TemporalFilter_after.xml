@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sos:GetObservation
+  service="SOS" version="2.0.0" 
+  xmlns:fes="http://www.opengis.net/fes/2.0" 
+  xmlns:gml="http://www.opengis.net/gml/3.2" 
+  xmlns:sos="http://www.opengis.net/sos/2.0">
+
+  <!--
+    Please make sure to read and understand README.md and LICENSE.txt.
+
+    This file was prepared in the research project COCOP (Coordinating
+    Optimisation of Complex Industrial Processes).
+    https://cocop-spire.eu/
+    Author: Petri Kannisto, Tampere University, Finland
+    Last modified: 4/2020
+
+    This file has been derived from standards and XML schemata provided by the
+    Open Geospatial Consortium (OGC®). Please make sure to read and understand
+    the following legal conditions:
+    (1) Copyright Notice and Disclaimers at https://www.ogc.org/ogc/legal
+    (2) OGC® Document Notice; the most recent version is at
+        https://www.ogc.org/ogc/document and another enclosed in file
+        "ogc_document_notice.txt"
+    (3) OGC® Software Notice; the most recent version is at
+        https://www.ogc.org/ogc/software and another enclosed in file
+        "ogc_software_notice.txt"
+    (4) The license of each related standard referred to in this file.
+    
+    Please note: this file has *not* received any official compliance check
+    with OGC standards.
+    
+    In this file, the code has been derived from the following standards:
+
+    - OGC Filter Encoding 2.0 Encoding Standard – With Corrigendum
+      (OGC 09-026r2; please see the file "ref_and_license_ogc_filter.txt")
+
+    - OpenGIS® Geography Markup Language (GML) Encoding Standard
+      (OGC 07-036; please see the file "ref_and_license_ogc_gml.txt")
+
+    - OGC® Sensor Observation Service Interface Standard
+      (OGC 12-006; please see the file "ref_and_license_ogc_sos.txt")
+  -->
+
+  <!-- In this file: temporal filter with the "after" operator -->
+
+  <sos:temporalFilter>
+    <fes:After>
+      <fes:ValueReference>resultTime</fes:ValueReference>
+      <gml:TimeInstant gml:id="time1">
+        <gml:timePosition>2018-03-28T12:01:59Z</gml:timePosition>
+      </gml:TimeInstant>
+    </fes:After>
+  </sos:temporalFilter>
+</sos:GetObservation>

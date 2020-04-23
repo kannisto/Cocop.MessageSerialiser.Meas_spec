@@ -1,0 +1,28 @@
+Cocop.MessageSerialiser.Meas: specification of data quality strings
+===================================================================
+
+Please make sure to read and understand README.md and LICENSE.txt!
+
+File created: 22 Aug 2018  
+Petri Kannisto, Tampere University, Finland
+
+Last modified: 11 Feb 2019  
+Petri Kannisto, Tampere University, Finland
+
+
+Good data quality is specified using the following string values. If a quality string starts with that string, the quality is always considered good.
+
+good
+
+
+Bad data quality starts with the following string.
+
+bad
+
+
+Please note that if there is a need to add an indication why the quality is bad, the string may be continued (see below). However, there is no specification about how to indicate each specific reason.
+
+bad/equipmentfailure
+
+
+NOTE: the data quality string *must not* contain any whitespace characters!

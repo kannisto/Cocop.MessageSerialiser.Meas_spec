@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<om:OM_Observation 
+  gml:id="my-obs" 
+  xmlns:gml="http://www.opengis.net/gml/3.2"
+  xmlns:om="http://www.opengis.net/om/2.0" 
+  xmlns:swe="http://www.opengis.net/swe/2.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xmlns:xlink="http://www.w3.org/1999/xlink" 
+  xmlns:cocop="http://www.cocop-spire.eu/om-custom/1.1">
+	
+  <!--
+    Please make sure to read and understand README.md and LICENSE.txt.
+
+    This file was prepared in the research project COCOP (Coordinating
+    Optimisation of Complex Industrial Processes).
+    https://cocop-spire.eu/
+    Author: Petri Kannisto, Tampere University, Finland
+    Last modified: 4/2020
+
+    This file has been derived from standards and XML schemata provided by the
+    Open Geospatial Consortium (OGC®). Please make sure to read and understand
+    the following legal conditions:
+    (1) Copyright Notice and Disclaimers at https://www.ogc.org/ogc/legal
+    (2) OGC® Document Notice; the most recent version is at
+        https://www.ogc.org/ogc/document and another enclosed in file
+        "ogc_document_notice.txt"
+    (3) OGC® Software Notice; the most recent version is at
+        https://www.ogc.org/ogc/software and another enclosed in file
+        "ogc_software_notice.txt"
+    (4) The license of each related standard referred to in this file.
+    
+    Please note: this file has *not* received any official compliance check
+    with OGC standards.
+    
+    In this file, the code has been derived from the following standards:
+
+    - OpenGIS® Geography Markup Language (GML) Encoding Standard
+      (OGC 07-036; please see the file "ref_and_license_ogc_gml.txt")
+
+    - Observations and Measurements - XML Implementation
+      (OGC 10-025r1; please see the file "ref_and_license_ogc_om.txt")
+
+    - OGC® SWE Common Data Model Encoding Standard
+      (OGC 08-094r1; please see the file "ref_and_license_ogc_swecommon.txt")
+  -->
+  
+  <!--
+    In this file: a conflict related to feature of interest, because the
+    element should not have both content and an XLink attribute.
+  -->
+  
+	<om:type xlink:href="http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement"/>
+	
+  <om:phenomenonTime>
+		<gml:TimeInstant gml:id="phenomenonTimeInstant">
+			<gml:timePosition>2018-02-05T12:10:13.00Z</gml:timePosition>
+		</gml:TimeInstant>
+	</om:phenomenonTime>
+  
+	<om:resultTime>
+    <gml:TimeInstant gml:id="resultTimeInstant">
+			<gml:timePosition>2018-02-05T12:31:53.00Z</gml:timePosition>
+		</gml:TimeInstant>
+  </om:resultTime>
+  
+  <!-- The observation XML schema require these metadata fields. -->
+  <om:procedure xlink:type="simple" xlink:title=""/>
+  <om:observedProperty xlink:type="simple" xlink:title=""/>
+  
+  <!-- Using the xlink attr with a complex feature should cause an error -->
+  <om:featureOfInterest xlink:title="sfsg">
+    <cocop:SweDataComponentAsFeature> <!-- This element is a COCOP extension to standards -->
+      <swe:DataRecord>
+        <swe:identifier>my-plant/fic-11</swe:identifier>
+        <swe:field name="SomeField">
+          <swe:Text>
+            <swe:value>Some value</swe:value>
+          </swe:Text>
+        </swe:field>
+      </swe:DataRecord>
+    </cocop:SweDataComponentAsFeature>
+  </om:featureOfInterest>
+  
+  <om:result xsi:type="gml:MeasureType" uom="t">20.3</om:result>
+  
+</om:OM_Observation>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sps:Submit 
+  service="SPS" version="2.0.0" 
+  xmlns:sps="http://www.opengis.net/sps/2.0" 
+  xmlns:swe="http://www.opengis.net/swe/2.0" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  
+  <!--
+    Please make sure to read and understand README.md and LICENSE.txt.
+
+    This file was prepared in the research project COCOP (Coordinating
+    Optimisation of Complex Industrial Processes).
+    https://cocop-spire.eu/
+    Author: Petri Kannisto, Tampere University, Finland
+    Last modified: 4/2020
+
+    This file has been derived from standards and XML schemata provided by the
+    Open Geospatial Consortium (OGC®). Please make sure to read and understand
+    the following legal conditions:
+    (1) Copyright Notice and Disclaimers at https://www.ogc.org/ogc/legal
+    (2) OGC® Document Notice; the most recent version is at
+        https://www.ogc.org/ogc/document and another enclosed in file
+        "ogc_document_notice.txt"
+    (3) OGC® Software Notice; the most recent version is at
+        https://www.ogc.org/ogc/software and another enclosed in file
+        "ogc_software_notice.txt"
+    (4) The license of each related standard referred to in this file.
+    
+    Please note: this file has *not* received any official compliance check
+    with OGC standards.
+    
+    In this file, the code has been derived from the following standards:
+
+    - OGC® Sensor Planning Service Implementation Standard
+      (OGC 09-000; please see the file "ref_and_license_ogc_sps.txt")
+
+    - OGC® SWE Common Data Model Encoding Standard
+      (OGC 08-094r1; please see the file "ref_and_license_ogc_swecommon.txt")
+  -->
+  
+  <!--
+    In this file: a request to submit (or start) a task.
+  -->
+  
+  <!-- Required element: -->
+  <sps:procedure>http://cocop/myproc</sps:procedure>
+  
+  <!-- Required element: -->
+  <sps:taskingParameters>
+    <sps:ParameterData>
+      <sps:encoding>
+        <swe:XMLEncoding />
+      </sps:encoding>
+      <sps:values xsi:type="swe:DataRecordPropertyType">
+        <swe:DataRecord>
+          <swe:field name="SomeCount1">
+            <swe:Count>
+              <swe:value>3</swe:value>
+            </swe:Count>
+          </swe:field>
+          <swe:field name="SomeCategory1">
+            <swe:Category>
+              <swe:value>active</swe:value>
+            </swe:Category>
+          </swe:field>
+        </swe:DataRecord>
+      </sps:values>
+    </sps:ParameterData>
+  </sps:taskingParameters>
+  
+</sps:Submit>
